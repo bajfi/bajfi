@@ -11,7 +11,7 @@ int main(){
     machineB.Calculate();
     machineC.Calculate();
 
-    machineA.set_machine(B);
+    machineA.set_machine(&B);
     machineA.Calculate();
     
     return 0;

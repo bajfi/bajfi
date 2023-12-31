@@ -48,25 +48,20 @@ class Application{
 private:
     templateClass* workflow{};
 public:
-    explicit Application(templateClass* temp):workflow(temp){};
+    explicit Application(templateClass* workflow):workflow(workflow){};
 
-    ~Application(){
-        if(workflow != nullptr){
-            delete workflow;
-            workflow = nullptr;
-        }
-    }
+    ~Application() = default;
 
     virtual void execute() noexcept{
         workflow->execute();
     }
 
-    void setWorkflow(templateClass* tmp) noexcept{
-        if(workflow!= nullptr){
-            delete workflow;
-            workflow = nullptr;
-        }
-        workflow = tmp;
+    void setWorkflow(templateClass* workflow) noexcept{
+        // if(workflow!= nullptr){
+        //     delete workflow;
+        //     workflow = nullptr;
+        // }
+        workflow = workflow;
     }
 };
 

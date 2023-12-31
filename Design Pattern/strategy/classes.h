@@ -59,12 +59,7 @@ public:
 
     explicit calculateMachine(classBase& base):_base(&base){};
 
-    virtual ~calculateMachine(){
-        if(this->_base != nullptr){
-            delete this->_base;
-            this->_base = nullptr;
-        }
-    };
+    virtual ~calculateMachine() = default;
 
     virtual void Calculate() noexcept{
         this->_base->calculate();

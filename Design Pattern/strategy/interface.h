@@ -10,6 +10,7 @@ public:
     classBase(/* args */) = default;
     virtual ~classBase(){};
 
+    // caculate method is changable
     virtual void calculate() = 0;
 };
 
