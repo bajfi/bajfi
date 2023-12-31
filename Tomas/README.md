@@ -2,7 +2,7 @@
 
 * ## How to use
 
-for matrix like :
+**For matrix like** :
 | a1 | c1 | 0  | 0  | 0  |
 |----|----|----|----|----|
 | b1 | a2 | c2 | 0  | 0  |
@@ -10,8 +10,8 @@ for matrix like :
 | 0  | 0  | b3 | a4 | c4 |
 | 0  | 0  | 0  | b4 | a5 |
 
+### Code example:
 ```
-/*  example
     // initialize
     vector<double> a(4, -1);
     vector<double> b(5, 3);
@@ -46,5 +46,4 @@ for matrix like :
     auto m = left*right;
     cout << m * result;
 
- */
 ```
