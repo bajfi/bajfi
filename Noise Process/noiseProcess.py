@@ -62,7 +62,7 @@ def file_process(file, csv_path='', img_path=''):
     data["diff"] = data["pressure"] - pressure_mean
 
     # calculate the overall level with RMS
-    pressure_rms = np.sqrt((data["pressure"] ** 2).mean())
+    pressure_rms = np.sqrt((data["diff"] ** 2).mean())
 
     # store db
     data["db"] = pd.Series([db(pressure_rms)], dtype=np.float64)
