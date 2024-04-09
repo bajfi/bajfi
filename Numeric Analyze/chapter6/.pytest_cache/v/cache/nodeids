@@ -1,0 +1,9 @@
+[
+  "test.py::TestClass::test_Cholesky",
+  "test.py::TestClass::test_Crout",
+  "test.py::TestClass::test_LDLdecomposition",
+  "test.py::TestClass::test_LU",
+  "test.py::TestClass::test_backSubstitution",
+  "test.py::TestClass::test_forwardSubstitution",
+  "test.py::test_backSubstitution"
+]

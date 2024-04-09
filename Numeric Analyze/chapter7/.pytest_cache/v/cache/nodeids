@@ -1,0 +1,8 @@
+[
+  "test.py::TestClass::test_Gaussian_Seldel",
+  "test.py::TestClass::test_Jacobi",
+  "test.py::TestClass::test_SOR",
+  "test.py::TestClass::test_SSOR",
+  "test.py::TestClass::test_conjugate_gradient",
+  "test.py::TestClass::test_conjugate_gradient_prediction"
+]
